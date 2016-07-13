@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <!--Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.-->
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,116 +17,95 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
-    <style>
-      .fake-code {
-        margin-top: -75px;
-        font-family: monospace;
-        font-size: 1.75em;
-        text-align: left;
-      }
+    <link href="css/cover.css" rel="stylesheet" />
+    <link href="css/indexStyles.css" rel="stylesheet" />
 
-      .tab1 {
-        margin-left: 4em;
-      }
+</head>
 
-      .tab2 {
-        margin-left: 8em;
-      }
-
-      .blue-words {
-        color: dodgerblue;
-      }
-
-      .green-words {
-        color: springgreen;
-      }
-
-      .orange-words {
-        color: orange;
-      }
-
-      .modal-dialog {
-        color: black;
-        text-shadow: none;
-      }
-    </style>
-
-  </head>
-
-  <body>
+<body>
 
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
+        <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+            <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-                         <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Portfolio@Github</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Science</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact Me</a></li>
-                </ul>
-              </nav>
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="https://github.com/shoshannamb">Portfolio@Github</a></li>
+                                <li><a href="../shakespeare/index.html">Shakespeare</a></li>
+
+                                <!--<li><a href="#">Projects</a></li>-->
+                                <!--<li><a href="#">Science</a></li>-->
+                                <!--<li><a href="#">About</a></li>-->
+                                <li><a href="#" data-toggle="modal" data-target="#contactForm">Contact Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="fake-code col-xs-10 col-xs-offset-1">
+                    <span class="blue-words">public class</span> ShoshannaCodes() {
+                    <br>
+                    <span class="tab1"><span class="blue-words">public static void</span> main(<span class="green-words">String</span>[] args) {</span>
+                    <br>
+                    <span class="tab2"><span class="green-words">System</span>.out.println(<span class="orange-words">"Hello, World!"</span>);</span>
+                    <br>
+                    <span class="tab1">}</span>
+                    <br> }
+                </div>
+
+                <div class="inner cover">
+                    <h1 class="cover-heading">Shoshanna Barnett</h1>
+                    <p class="lead">Developer, Scientist, Etc.</p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-default" data-toggle="modal" data-target="#contactForm">Hire Me</a>
+                    </p>
+                    <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <form action="https://formspree.io/shoshannamb@gmail.com" method="POST">
+                                    <div class="modal-body">
+                                        <fieldset class="form-group">
+                                            <label class="sr-only">Name</label>
+                                            <input class="form-control" type="text" name="name" placeholder="Your name" />
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label class="sr-only">E-mail</label>
+                                            <input class="form-control" type="email" name="email" placeholder="your_email@domain.com" />
+                                        </fieldset>
+                                        <fieldset>
+                                            <label class="sr-only">Message body</label>
+                                            <textarea class="form-control" rows="3" name="message" placeholder="Your message here..."></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div>
+                                            <input type="submit" class="btn btn-success" value="Send message">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/shoshannamb"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/chemistshoshanna"><i class="fa fa-linkedin fa-2x"></i></a>
+                </div>
+
+                <div class="mastfoot">
+                    <div class="inner">
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="fake-code">
-            <span class="blue-words">public class</span> ShoshannaCodes() {<br>
-              <span class="tab1"><span class="blue-words">public static void</span> main(<span class="green-words">String</span>[] args) {</span><br>
-                <span class="tab2"><span class="green-words">System</span>.out.println(<span class="orange-words">"Hello, World!"</span>);</span><br>
-              <span class="tab1">}</span><br>
-            }<br>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Shoshanna Barnett</h1>
-            <p class="lead">Developer, Scientist, Etc.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default" data-toggle="modal" data-target="#contactForm">Hire Me</a>
-            </p>
-            <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="exampleModalLabel">Send me an e-mail</h4>
-        </div>
-        <form action="https://formspree.io/shoshannamb@gmail.com" method="POST">
-        <div class="modal-body">
-              <label>Name</label>
-              <input type="text" name="name"><br>
-              <label>Message</label>
-              <input type="text" name="message-body"><br>
-              <label>Your e-mail address</label>
-              <input type="email" name="_replyto">
-              <label>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <input type="submit" class="btn btn-primary" value="Send message">
-        </div>
-      </div>
-    </div>
-  </div>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
 
         </div>
-
-      </div>
 
     </div>
 
@@ -131,6 +113,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/67eb5fbabd.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
