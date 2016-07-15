@@ -51,6 +51,11 @@ a:focus {
   outline: none;
 }
 
+.navbar-container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 825px) {
   .fake-code {
     font-size: 1.5em;

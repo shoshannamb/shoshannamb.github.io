@@ -35,10 +35,6 @@ i {
   padding: 5px;
 }
 
-.modal-header {
-
-}
-
 .modal-header, .modal-body {
   border-bottom: 0px;
 }
@@ -49,6 +45,10 @@ i {
 
 a:focus {
   outline: none;
+}
+
+.navbar-container {
+  padding-top: 20px;
 }
 
 @media (min-width: 825px) {
