@@ -70,9 +70,12 @@ body {
 .masthead-nav > li {
   display: inline-block;
 }
+
 .masthead-nav > li + li {
   margin-left: 20px;
+  margin-right: 20px;
 }
+
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
@@ -161,7 +164,7 @@ body {
     width: 100%;
   }
   .cover {
-    width: 80%;
-    padding-left: 20%;
+    width: 90%;
+    padding-left: 10%;
   }
 }

@@ -35,14 +35,6 @@ i {
   padding: 5px;
 }
 
-.modal-header, .modal-body {
-  border-bottom: 0px;
-}
-
-.modal-footer {
-  border-top: 0px;
-}
-
 a:focus {
   outline: none;
 }
@@ -51,9 +43,46 @@ a:focus {
   padding-top: 20px;
 }
 
+form > .form-group > label {
+  text-align: left;
+}
+
+#name-label, #topic-label, #email-label, #message-label, #about-name-label {
+  text-align: left;
+}
+
 .masthead-nav {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.about-text > p {
+  font-size: 1.4em;
+  text-align: justify;
+  margin: 20px;
+}
+
+.about-text {
+  border-bottom: 1px solid grey;
+}
+
+.form {
+  text-align: left;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.up-arrow {
+  text-align: right;
+  padding: 20px;
+}
+
+@media(min-width: 770px) {
+  .about {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 825px) {
@@ -66,5 +95,20 @@ a:focus {
   }
   .tab2 {
     margin-left: 8em;
+  }
+  .about-text {
+    border-bottom: none;
+  }
+  .about-form {
+    margin-top: 65px;
+  }
+  .about {
+    margin-top: 80px;
+  }
+}
+
+@media(min-width:990px) {
+  .up-arrow {
+    visibility: hidden;
   }
 }
