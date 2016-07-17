@@ -1,0 +1,14 @@
+.picture > img {
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.science {
+  margin: 20px;
+}
+
+@media(min-width: 990px) {
+  .science {
+    padding-top: 100px;
+  }
+}
