@@ -21,6 +21,7 @@
     <link href="css/cover.css" rel="stylesheet" />
     <link href="css/indexStyles.css" rel="stylesheet" />
     <link href="css/scienceStyles.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" />
 
 </head>
 
@@ -45,9 +46,10 @@
                                 <ul class="nav navbar-nav masthead-nav">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="https://github.com/shoshannamb">Portfolio@Github</a></li>
-                                    <li class="active"><a href="/about.html">About</a></li>
-                                    <li><a href="shakespeare/index.html">Shakespeare</a></li>
-                                    <li><a href="#contact">Contact Me</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <!--<li><a href="shakespeare/index.html">Shakespeare</a></li>-->
+                                    <li class="active"><a href="science.html">Science</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#contactForm">Contact Me</a></li>
                                     <!--<li><a href="#">Projects</a></li>-->
                                     <!--<li><a href="#">Science</a></li>-->
                                     <!--<li><a href="#">About</a></li>-->
@@ -58,24 +60,74 @@
                 </div>
 
                 <div class="inner cover science">
+                    <h1 class="cover-heading">Scientific Experience</h1>
                     <div class="row">
-                        <div class="picture col-md-3 col-md-offset-3">
+                        <div class="picture col-md-3 col-xs-6" id="energyStorage">
                             <!-- Energy Storage (battery or bubbles) -->
-                            <img src="img/bubblepic.png" height="100%" width="100%"/>
+                            <a class="popup-link picture" href="img/bubblepic-txt.jpg">
+                                <img src="img/bubblepic.png" height="100%" width="100%" alt="Electrode with bubbles" />
+                            </a>
+                            <figcaption>Energy Storage</figcaption>
                         </div>
-                        <div class="picture col-md-3">
+                        <div class="picture col-md-3 col-xs-6" id="molecules">
                             <!-- Making molecules -->
-                            <img src="img/CuBpymodel.png" height="100%" width="100%"/>
+                            <a class="popup-link picture" href="img/CuBpymodel-txt.jpg">
+                                <img src="img/CuBpymodel.png" height="100%" width="100%" alt="Ball and stick model of a copper molecule" />
+                            </a>
+                            <figcaption>Making Molecules</figcaption>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="picture col-md-3 col-md-offset-3">
-                            <img src="img/e-chem.png" height="100%" width="100%"/>
+                        <div class="picture col-md-3 col-xs-6" id="electrochem">
+                            <a class="popup-link picture" href="img/e-chem-text.jpg">
+                                <img src="img/e-chem.png" height="100%" width="100%" alt="Overlayed cyclic voltammograms" />
+                            </a>
+                            <figcaption>Electrochemistry</figcaption>
                         </div>
-                        <div class="picture col-md-3">
+                        <div class="picture col-md-3 col-xs-6" id="spectroscopy">
                             <!-- Spectroscopy -->
+                            <a class="popup-link picture" href="img/epr-text.jpg">
+                                <img src="img/epr.png" height="100%" width="100%" alt="overlayed EPR spectra" />
+                            </a>
+                            <figcaption>Spectroscopy</figcaption>
                         </div>
                     </div>
+
+                    <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h2>Contact Me</h2>
+                                </div>
+                                <form action="https://formspree.io/shoshannamb@gmail.com" method="POST" class="form">
+                                    <div class="modal-body">
+                                        <fieldset class="form-group">
+                                            <label id="name-label">Name</label>
+                                            <input class="form-control" type="text" name="name" />
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label id="topic-label">Topic</label>
+                                            <input class="form-control" type="text" name="topic" />
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label id="email-label">E-mail</label>
+                                            <input class="form-control" type="email" name="email" placeholder="your_email@domain.com" />
+                                        </fieldset>
+                                        <fieldset>
+                                            <label id="message-label">Message body</label>
+                                            <textarea class="form-control" rows="3" name="message" placeholder="Your message here..."></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div>
+                                            <input type="submit" class="btn btn-success" value="Send message">
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="up-arrow">
                         <a href="#top"><i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i></a>
@@ -91,6 +143,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/67eb5fbabd.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/webpage.js"></script>
+
 </body>
 
 </html>
