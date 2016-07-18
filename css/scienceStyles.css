@@ -5,7 +5,7 @@
 
 .science {
   margin-right: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 figcaption {
@@ -16,6 +16,6 @@ figcaption {
 
 @media(min-width: 990px) {
   .science {
-    padding-top: 100px;
+    padding-top: 30px;
   }
 }
