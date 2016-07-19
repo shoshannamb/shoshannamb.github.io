@@ -27,7 +27,7 @@ function writeSonnet() {
     return index == self.indexOf(elem);
   })
   //Add a sentence to "sonnet" listing the original source sonnets
-  var sources = "<p class=\"sources\">Sonnet lines from";
+  var sources = "<p class=\"sources\"><br>Sonnet lines from";
   for (i = 0; i < sonnetSources.length; i++) {
     if (i < sonnetSources.length - 1) {
       sources += " " + sonnetSources[i] + ",";
